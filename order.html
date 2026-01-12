@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order - Adason Couture</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="nav">
+        <a href="index.html" class="logo">Adason Couture</a>
+        <div class="links">
+            <a href="collection.html">Collection</a>
+            <a href="about.html">About</a>
+            <a href="order.html">Order</a>
+        </div>
+    </nav>
+    
+    <section class="order">
+        <h1>Place a Custom Order</h1>
+
+        <form onsubmit="sendToWhatsApp(event)">
+            <input type="text" id="name" placeholder="Full Name">
+            <input type="text" id="outfit" placeholder="Outfit TYpe (e.g Senator)" required>
+            <textarea id="details" placeholder="Describe your order"></textarea>
+            <button type="submit">Send Via WhatsApp</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
